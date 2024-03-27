@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Route Planning</title>
+    <style>
+        .cell {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Warehouse Route Planning</h1>
+    <div>
+        {% for row in grid %}
+            {% for cell in row %}
+                <div class="cell">{{ cell }}</div>
+            {% endfor %}
+            <br>
+        {% endfor %}
+    </div>
+</body>
+</html>
